@@ -21,7 +21,6 @@ jobs:
         image: gorkem-backstage-app
         tags: latest ${{ github.sha }}
         archs: amd64, arm64 
-        build-args: ARCH=${{ matrix.arch }}
         containerfiles: |
           ./Dockerfile
         
